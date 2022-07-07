@@ -9,8 +9,11 @@ Vue.component('encabezado', {
                 <h1>tod<img class="img-fluid" src="img/fingerprint-g988908f2c_1280.png" style="width: 2.5rem; transform: rotate(30deg) translate(5%);">s</h1>
             </div>
             
-            <nav class="px-0 navbar navbar-dark">
-             <div id="mi_navbar" class="text-center row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 justify-content-center">
+            <nav class="px-0 navbar navbar-dark navbar-expand-lg row">
+            <button class="navbar-toggler align-self-center" type="button" data-bs-toggle="collapse" data-bs-target="#mi_navbar" aria-controls="mi_navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+             <div id="mi_navbar" class="collapse navbar-collapse text-center row row-cols-lg-4 row-cols-xl-6 justify-content-center">
                 <div class="nav-item">
                     <a class="nav-link btn rounded-pill" aria-current="page" href="index.html"><i class="fas fa-home"></i> Inicio</a>
                 </div>

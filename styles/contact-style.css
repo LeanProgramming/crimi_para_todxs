@@ -4,8 +4,8 @@
     border-left: 4px double var(--bordes);
     border-right: 4px double var(--bordes);
     box-shadow: 0 15px 7px rgba(0, 0, 0, .5);
-}
 
+}
 
 #form_title {
     font-family: var(--title-font);
@@ -16,5 +16,18 @@
 }
 
 #miFormulario {
-    border: 3px double var(--primary)
+    border: 3px double var(--primary);
+    width: 60%;
+}
+
+@media (max-width: 992px) {
+    #miFormulario {
+        width: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    #miFormulario {
+        width: 100%;
+    }
 }
