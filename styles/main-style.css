@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&family=Comfortaa:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+/*
+La hoja de estilo se encuentra ordenada de la misma forma 
+en que se encuentra distribuida la página, es decir, de arriba 
+hacia abajo,de izquierda a derecha,
+*/
+
+
+:root {
+    --title-font: 'Playfair Display', serif;
+    --font: "Baloo 2", cursive;
+    --primary: darkred;
+    --secondary: rgba(247, 226, 188, 0.7);
+    --terciary: burlywood;
+    --bordes: lightseagreen;
+    --borde-boton: rgba(185, 151, 88, 0.8);
+    --fondo-gradiente: linear-gradient(to right, rgba(50, 158, 140, 0.8), rgba(127, 220, 200, 0.75), rgba(50, 158, 140, 0.8));
+    --fondo-nav-item:linear-gradient(225deg, wheat 0%, burlywood 100%);
+    --nav_gradiente: linear-gradient(to right, rgba(255, 255, 255, 0.0) 0%, rgba(201, 167, 122, 0.9) 10% 90%, rgba(255, 255, 255, 0.0) 100%);
+    --titulo_gradiente: linear-gradient(to right, rgba(255, 255, 255, 0.0) 0%, rgba(222, 184, 135, 0.7) 15% 85%, rgba(255, 255, 255, 0.0) 100%);
+}
+
+*, html {
+    color: var(--primary);
+   font-family: "Baloo 2", cursive;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--primary) !important;
+}
+
+a:link {
+    color: var(--primary);
+}
+
+body {
+    background: var(--fondo-gradiente)
+
+}
+
+button {
+    background: var(--terciary);
+    border-radius: 10px !important;
+    display: block;
+    padding: 0.5rem;
+    color: var(--primary);
+    border: 1px solid var(--borde-boton);
+}
+
+button:hover {
+    background-color: var(--secondary);
+    border: 1px solid var(--primary);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    
+}
+
+#mi_titulo {
+    background-color: var(--secondary);
+    background-image: url(/crimi_para_todxs-main/img/magnifying.png);
+    background-position-y: 37%;
+    background-size: cover;
+    border-left: 10px groove var(--secondary);
+    border-right: 10px ridge var(--secondary);
+    border-radius: 15px;
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.5);
+    padding-top: 4rem;
+}
+
+#crimi_para_todes {
+    background: var(--titulo_gradiente);
+    padding-right: 5%;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+#crimi_para_todes h1 {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-size: 5em;
+    font-style: italic;
+    font-weight: 800;
+    text-decoration: underline;
+    word-break: keep-all;
+    text-shadow: 5px 5px 2px rgba(75, 0, 0, 0.5);
+    margin: 0 0.5rem;
+}
+
+#mi_navbar {
+    background: var(--nav_gradiente);
+    padding-top: 0.25rem;
+}
+
+.nav-item {
+    margin: 0.25rem;
+}
+
+.nav-link {
+    background: var(--fondo-nav-item);
+}
+
+.nav-link:hover {
+    background-color: var(--secondary);
+    border: 1px solid var(--primary);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-menu {
+    background: var(--fondo-nav-item);
+    border-radius: 15px !important;
+    margin-left: 1.5rem !important;
+}
+
+.dropdown-item:hover {
+    background-color: var(--secondary) !important;
+}
+
+#left-aside {
+    background: var(--secondary);
+    border-radius: 10px;
+    border-left: 4px double var(--bordes);
+    border-right: 4px double var(--bordes);
+    box-shadow: 0 15px 7px rgba(0, 0, 0, .5);
+}
+
+#main_content {
+    background: var(--secondary);
+    border-radius: 10px;
+    border-left: 4px double var(--bordes);
+    border-right: 4px double var(--bordes);
+    box-shadow: 5px 10px 7px rgba(0, 0, 0, .5);
+}
+
+.img_tarjetas {
+    border-radius: 10px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .5);
+}
+
+.subtitulo {
+    background: var(--titulo_gradiente);
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    text-decoration-line: underline;
+    border-top: 5px double var(--bordes);
+    border-bottom: 5px double var(--bordes);
+}
+
+.card {
+    border: 3px outset lightseagreen !important;
+    box-shadow: 5px 10px 7px rgba(0, 0, 0, .5);
+    border-radius: 20px !important;
+}
+
+
+.rama-otro-item {
+    border: 3px outset var(--bordes);
+    border-radius: 15px;
+    box-sizing: content-box;
+}
+
+.rama-otro-item:hover {
+    background-color: var(--secondary);
+    color: var(--primary) !important;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+#right-aside {
+    background: var(--secondary);
+    border-radius: 10px;
+    border-left: 4px double var(--bordes);
+    border-right: 4px double var(--bordes);
+    box-shadow: 0 15px 7px rgba(0, 0, 0, .5);
+}
+
+#mi_footer {
+    background-color: var(--secondary);
+    border-left: 10px groove var(--secondary);
+    border-right: 10px ridge var(--secondary);
+    border-radius: 15px;
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.5);
+}
+
+#mi_footer a{
+    text-decoration: none;
+    color: var(--primary);
+}
